@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .clock{
+            background-color: #4e058a;
+            width: auto;
+            height: 400px;
+            position: absolute;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        .timer_box{
+            width: 1000px;
+            height: 300px;
+            border-radius: 50px;
+background: #4e058a;
+box-shadow:  20px 20px 60px #420475,
+             -20px -20px 60px #5a069f;
+             padding: 30px;
+             box-sizing: border-box;
+        }
+
+        .timer_box > div{
+            display: inline-block;
+        }
+
+        .hour, .min{
+            width: 380px;
+            height: 240px;
+            position: absolute;
+        }
+
+        .min{
+            left: 450px;
+        }
+
+        .dis{
+            width: 150px;
+            height: 240px;
+            display: inline-block;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        .line{
+            background-color:rgb(168, 168, 168);
+            opacity: 0.5;
+            position: absolute;
+        }
+
+        .line:nth-child(1){
+            width: 80px;
+            height: 20px;
+            top: 20px;
+            left:35px
+        }
+        .line:nth-child(2){
+            width: 20px;
+            height: 70px;
+            left: 15px;
+            top: 40px;
+        }
+        .line:nth-child(3){
+            width: 20px;
+            height: 70px;
+            top:40px;
+            right: 15px;
+        }
+        .line:nth-child(4){
+            width: 80px;
+            height: 20px;
+            top: 110px;
+            left:35px
+        }
+        .line:nth-child(5){
+            width: 20px;
+            height: 70px;
+            bottom: 40px;
+            left: 15px;
+        }
+        .line:nth-child(6){
+            width: 20px;
+            height: 70px;
+            bottom: 40px;
+            right: 15px;
+        }
+        .line:nth-child(7){
+            width: 80px;
+            height: 20px;
+            bottom: 20px;
+            left:35px
+        }
+
+        .light{
+            background-color: white;
+            box-shadow: 0px 0px 15px white;;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hour_min timer_box">
+            <div class="hour">
+                <div class="left dis">
+                    <div class="line light"></div>
+                    <div class="line light"></div>
+                    <div class="line light"></div>
+                    <div class="line light"></div>
+                    <div class="line"></div>
+                    <div class="line light"></div>
+                    <div class="line light"></div>
+                </div>
+                <div class="right dis">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="min">
+                <div class="left dis">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="right dis">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>
